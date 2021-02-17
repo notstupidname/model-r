@@ -2,9 +2,13 @@
 	<a href="/" class="logo"><span>М</span>одельер</a>
 	<ul class="links">
 		<li {%if page.url == '/catalog/'%} class="current"{% endif %}><a href="#">Производство</a></li>
-		<li {%if page.url == '/catalog/'%} class="current"{% endif %}><a href="#">Проектирование</a></li>
-		<li {%if page.url == '/catalog/'%} class="current"{% endif %}><a href="#">Дизайн</a></li>
-		<li {%if page.url == '/catalog/'%} class="current"{% endif %}><a href="#">Испытания</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Услуги</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Продукция</a></li>
+		<li {%if page.url == '/catalog/'%} class="current"{% endif %}><a href="#">Разработка</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Чертежи и модели</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Расчеты</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Испытания</a></li>
+		<li class="sub-cat {% if page.url contains '/porolon/' %}current{% endif %}"><a href="/catalog/porolon/">Замеры</a></li>
 		<li class="{%if page.url contains '/blog/' %} current{% endif %}"><a href="/blog/">Блог</a></li>
 		<li class="{%if page.url contains '/contact' %} current{% endif %}"><a href="/contact/">Контакты</a></li>
 	</ul>
